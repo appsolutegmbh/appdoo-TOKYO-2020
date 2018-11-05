@@ -85,7 +85,7 @@
           "inputDataSourceID" : "",
           "evaluatesImmediately" : true,
           "localData" : "var now_date = new Date();\nvar event_seconds = Math.floor(Date.UTC(2020, 6, 24, 20, 0, 0) \/ 1000);\nvar now_seconds = Math.floor(now_date.getTime() \/ 1000);\n\nvar event_time_offset = -540;\nnow_seconds = now_seconds - (event_time_offset * 60);\n\nvar prepared_days = (event_seconds - now_seconds);\nvar prepared_hours = (event_seconds - now_seconds) \/ 60;\nvar prepared_minutes = (event_seconds - now_seconds) \/ 3600;\nvar prepared_seconds = (event_seconds - now_seconds) \/ 86400;\n\nvar countdown_days = parseInt(Math.floor(prepared_seconds));\nvar countdown_hours = parseInt(Math.floor(prepared_minutes) - (countdown_days * 24));\nvar countdown_minutes = parseInt(Math.floor(prepared_hours) - (((countdown_days * 24) * 60) + (countdown_hours * 60)));\nvar countdown_seconds = parseInt(Math.floor(prepared_days) - (((((countdown_days * 24) * 60) + (countdown_hours * 60)) * 60) + countdown_minutes * 60));\n\nreturn '<div id=\"circle\"><\/div><span class=\"value\">'+countdown_days+'<\/span> <span class=\"unit\">'+(countdown_days == 1 ? 'day' : 'days')+'<\/span> <span class=\"value\">'+countdown_hours+'<\/span> <span class=\"unit\">'+(countdown_hours == 1 ? 'hour' : 'hours')+'<\/span> <span class=\"value\">'+countdown_minutes+'<\/span> <span class=\"unit\">min<\/span> <span class=\"value\">'+countdown_seconds+'<\/span> <span class=\"unit\">sec<\/span>';",
-          "contents" : "<div id=\"circle\"><\/div><span class=\"value\">627<\/span> <span class=\"unit\">days<\/span> <span class=\"value\">1<\/span> <span class=\"unit\">hour<\/span> <span class=\"value\">8<\/span> <span class=\"unit\">min<\/span> <span class=\"value\">52<\/span> <span class=\"unit\">sec<\/span>",
+          "contents" : "<div id=\"circle\"><\/div><span class=\"value\">627<\/span> <span class=\"unit\">days<\/span> <span class=\"value\">0<\/span> <span class=\"unit\">hours<\/span> <span class=\"value\">40<\/span> <span class=\"unit\">min<\/span> <span class=\"value\">49<\/span> <span class=\"unit\">sec<\/span>",
           "name" : "DP - Countdown",
           "$type" : "JavaScriptContainer"
         },
@@ -191,7 +191,7 @@
               "fontFamily" : "System",
               "autoresizingMask" : 34,
               "fontSize" : 15,
-              "content" : "<div id=\"circle\"><\/div><span class=\"value\">627<\/span> <span class=\"unit\">days<\/span> <span class=\"value\">1<\/span> <span class=\"unit\">hour<\/span> <span class=\"value\">8<\/span> <span class=\"unit\">min<\/span> <span class=\"value\">52<\/span> <span class=\"unit\">sec<\/span>"
+              "content" : "<div id=\"circle\"><\/div><span class=\"value\">627<\/span> <span class=\"unit\">days<\/span> <span class=\"value\">0<\/span> <span class=\"unit\">hours<\/span> <span class=\"value\">40<\/span> <span class=\"unit\">min<\/span> <span class=\"value\">49<\/span> <span class=\"unit\">sec<\/span>"
             },
             {
               "layoutMode" : "autoFitHeight",
@@ -347,7 +347,7 @@
       "navigationObjectsNodeIsExpandedInEditorOutline" : true,
       "simulatedInterfaceOrientation" : "landscape",
       "selectedObjectIDs" : [
-        "UILabel10066"
+        "ResourceReference11236"
       ],
       "$type" : "Scene"
     },
@@ -378,8 +378,8 @@
         "title" : " ",
         "viewData" : {
           "isExpandedInEditorOutline" : true,
-          "scrollLeft" : 0,
           "$id" : "SceneRootView44033",
+          "scrollLeft" : 0,
           "position" : {
             "top" : 0,
             "left" : 0
@@ -466,11 +466,11 @@
               "transform" : "",
               "textAlignment" : "center",
               "actionInfo" : {
-                "type" : "objectAction",
+                "$type" : "ActionInfo",
                 "modalTransitionStyle" : "-1",
                 "actionType" : "objectAction",
+                "type" : "objectAction",
                 "objectActionID" : "",
-                "$type" : "ActionInfo",
                 "$domain" : "appDoo"
               },
               "userInteractionEnabled" : true,
@@ -617,11 +617,11 @@
               "transform" : "",
               "actionType" : "objectAction",
               "actionInfo" : {
-                "type" : "navigateBack",
+                "$type" : "ActionInfo",
                 "modalTransitionStyle" : "-1",
                 "actionType" : "navigateBack",
+                "type" : "navigateBack",
                 "objectActionID" : "",
-                "$type" : "ActionInfo",
                 "$domain" : "appDoo"
               },
               "userInteractionEnabled" : true,
@@ -719,7 +719,7 @@
     "iconImage" : {
       "$type" : "ImageReference",
       "$domain" : "appDoo",
-      "imageID" : "E01538E3-6850-48AB-B56A-A113CD245D9C-3390-0000197B4CCD5232.png"
+      "imageID" : "FD63B24F-C219-490E-A0D3-F5668929F7E7-1167-0000029FA396840E.png"
     },
     "editorAppearance" : {
       "fileReferencesNodeIsExpandedInEditorOutline" : true,
@@ -751,8 +751,9 @@
       "globalObjectsNodeIsExpandedInEditorOutline" : true,
       "historyStackPosition" : 6
     },
+    "hidesStatusBarOnLaunch" : 0,
     "editorVersion" : 105,
-    "title" : "TOKYO 2020",
+    "title" : "TOKYO2020",
     "formatVersion" : 105,
     "lastObjectID" : 10041,
     "simulatedSystemVersion" : 7,
@@ -766,7 +767,7 @@
     "appleAppCategory" : "",
     "editedObject" : "Scene1",
     "projectID" : "",
-    "companyName" : "appsolute GmbH",
+    "companyName" : "appsoluteGmbH",
     "windowFrame" : "285 91 960 640 0 0 1440 878 ",
     "windowIsFullScreen" : false,
     "rootInstance" : "TabBarController",
