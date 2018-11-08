@@ -656,7 +656,7 @@
       "v_showsInTabBar" : false,
       "simulatedInterfaceOrientation" : "landscape",
       "selectedObjectIDs" : [
-        "Hyperlink44043"
+        "UILabel44034"
       ],
       "$type" : "Scene"
     }
@@ -726,7 +726,7 @@
     },
     "editorAppearance" : {
       "fileReferencesNodeIsExpandedInEditorOutline" : true,
-      "inspectorCurrentSegment" : 1,
+      "inspectorCurrentSegment" : 0,
       "collapsedNewItemSections" : [
 
       ],
