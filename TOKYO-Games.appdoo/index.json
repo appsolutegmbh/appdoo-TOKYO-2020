@@ -119,8 +119,8 @@
         "title" : " ",
         "viewData" : {
           "isExpandedInEditorOutline" : true,
-          "scrollLeft" : 0,
           "$id" : "UIView6636",
+          "scrollLeft" : 0,
           "position" : {
             "top" : 0,
             "left" : 0
@@ -589,7 +589,7 @@
               "autoresizingMask" : 50,
               "fontFamily" : "System",
               "autoFitWidth" : false,
-              "text" : "App created with appdoo.",
+              "text" : "App created with appdoo",
               "numberOfLines" : 0
             },
             {
@@ -719,7 +719,7 @@
     "iconImage" : {
       "$type" : "ImageReference",
       "$domain" : "appDoo",
-      "imageID" : "FD63B24F-C219-490E-A0D3-F5668929F7E7-1167-0000029FA396840E.png"
+      "imageID" : "8914A95E-F991-464D-BDA8-F2F8473A49BE-2405-0000108B748699E0.png"
     },
     "editorAppearance" : {
       "fileReferencesNodeIsExpandedInEditorOutline" : true,
@@ -737,7 +737,8 @@
         "Scene44026",
         "Scene1",
         "Scene44026",
-        "Scene1"
+        "Scene1",
+        "Scene44026"
       ],
       "inspectorCollapsedGroups" : [
         "UILabelShadow",
@@ -751,7 +752,7 @@
       "inspectorIsVisible" : true,
       "elementListIsVisible" : true,
       "globalObjectsNodeIsExpandedInEditorOutline" : true,
-      "historyStackPosition" : 8
+      "historyStackPosition" : 9
     },
     "hidesStatusBarOnLaunch" : 0,
     "editorVersion" : 105,
@@ -767,7 +768,7 @@
     "statusbarVisibility" : 0,
     "targetedDeviceFamily" : "iOS-Universal",
     "appleAppCategory" : "",
-    "editedObject" : "Scene1",
+    "editedObject" : "Scene44026",
     "projectID" : "",
     "companyName" : "appsoluteGmbH",
     "windowFrame" : "285 91 960 640 0 0 1440 878 ",
