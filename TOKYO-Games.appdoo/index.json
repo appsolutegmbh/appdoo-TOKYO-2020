@@ -85,7 +85,7 @@
           "inputDataSourceID" : "",
           "evaluatesImmediately" : true,
           "localData" : "var now_date = new Date();\nvar event_seconds = Math.floor(Date.UTC(2020, 6, 24, 20, 0, 0) \/ 1000);\nvar now_seconds = Math.floor(now_date.getTime() \/ 1000);\n\nvar event_time_offset = -540;\nnow_seconds = now_seconds - (event_time_offset * 60);\n\nvar prepared_days = (event_seconds - now_seconds);\nvar prepared_hours = (event_seconds - now_seconds) \/ 60;\nvar prepared_minutes = (event_seconds - now_seconds) \/ 3600;\nvar prepared_seconds = (event_seconds - now_seconds) \/ 86400;\n\nvar countdown_days = parseInt(Math.floor(prepared_seconds));\nvar countdown_hours = parseInt(Math.floor(prepared_minutes) - (countdown_days * 24));\nvar countdown_minutes = parseInt(Math.floor(prepared_hours) - (((countdown_days * 24) * 60) + (countdown_hours * 60)));\nvar countdown_seconds = parseInt(Math.floor(prepared_days) - (((((countdown_days * 24) * 60) + (countdown_hours * 60)) * 60) + countdown_minutes * 60));\n\nreturn '<div id=\"circle\"><\/div><span class=\"value\">'+countdown_days+'<\/span> <span class=\"unit\">'+(countdown_days == 1 ? 'day' : 'days')+'<\/span> <span class=\"value\">'+countdown_hours+'<\/span> <span class=\"unit\">'+(countdown_hours == 1 ? 'hour' : 'hours')+'<\/span> <span class=\"value\">'+countdown_minutes+'<\/span> <span class=\"unit\">min<\/span> <span class=\"value\">'+countdown_seconds+'<\/span> <span class=\"unit\">sec<\/span>';",
-          "contents" : "<div id=\"circle\"><\/div><span class=\"value\">627<\/span> <span class=\"unit\">days<\/span> <span class=\"value\">0<\/span> <span class=\"unit\">hours<\/span> <span class=\"value\">40<\/span> <span class=\"unit\">min<\/span> <span class=\"value\">49<\/span> <span class=\"unit\">sec<\/span>",
+          "contents" : "<div id=\"circle\"><\/div><span class=\"value\">623<\/span> <span class=\"unit\">days<\/span> <span class=\"value\">1<\/span> <span class=\"unit\">hour<\/span> <span class=\"value\">13<\/span> <span class=\"unit\">min<\/span> <span class=\"value\">29<\/span> <span class=\"unit\">sec<\/span>",
           "name" : "DP - Countdown",
           "$type" : "JavaScriptContainer"
         },
@@ -119,8 +119,8 @@
         "title" : " ",
         "viewData" : {
           "isExpandedInEditorOutline" : true,
+          "scrollLeft" : 0,
           "$id" : "UIView6636",
-          "$type" : "SceneRootView",
           "position" : {
             "top" : 0,
             "left" : 0
@@ -191,7 +191,7 @@
               "fontFamily" : "System",
               "autoresizingMask" : 34,
               "fontSize" : 15,
-              "content" : "<div id=\"circle\"><\/div><span class=\"value\">627<\/span> <span class=\"unit\">days<\/span> <span class=\"value\">0<\/span> <span class=\"unit\">hours<\/span> <span class=\"value\">40<\/span> <span class=\"unit\">min<\/span> <span class=\"value\">49<\/span> <span class=\"unit\">sec<\/span>"
+              "content" : "<div id=\"circle\"><\/div><span class=\"value\">623<\/span> <span class=\"unit\">days<\/span> <span class=\"value\">1<\/span> <span class=\"unit\">hour<\/span> <span class=\"value\">13<\/span> <span class=\"unit\">min<\/span> <span class=\"value\">29<\/span> <span class=\"unit\">sec<\/span>"
             },
             {
               "layoutMode" : "autoFitHeight",
@@ -277,7 +277,7 @@
               "autoresizingMask" : 34,
               "fontFamily" : "System",
               "autoFitWidth" : false,
-              "text" : "TOKYO Olympics",
+              "text" : "TOKYO Games",
               "numberOfLines" : 0
             },
             {
@@ -338,7 +338,7 @@
           "hidden" : false,
           "userInteractionEnabled" : true,
           "name" : "Ansicht",
-          "scrollLeft" : 0
+          "$type" : "SceneRootView"
         },
         "$type" : "UIViewController",
         "$domain" : "appDoo.iOS"
@@ -347,7 +347,7 @@
       "navigationObjectsNodeIsExpandedInEditorOutline" : true,
       "simulatedInterfaceOrientation" : "landscape",
       "selectedObjectIDs" : [
-        "ResourceReference11236"
+        "UIButton10056"
       ],
       "$type" : "Scene"
     },
@@ -655,9 +655,6 @@
       },
       "v_showsInTabBar" : false,
       "simulatedInterfaceOrientation" : "landscape",
-      "selectedObjectIDs" : [
-        "UILabel44034"
-      ],
       "$type" : "Scene"
     }
   ],
@@ -739,7 +736,8 @@
         "Scene1",
         "Scene44026",
         "Scene1",
-        "Scene44026"
+        "Scene44026",
+        "Scene1"
       ],
       "inspectorCollapsedGroups" : [
         "UILabelShadow",
@@ -749,15 +747,15 @@
         "FormProcessorEvents",
         "FormProcessorAdvanced"
       ],
-      "heightOfNewItemsList" : 666,
+      "heightOfNewItemsList" : 377,
       "inspectorIsVisible" : true,
       "elementListIsVisible" : true,
       "globalObjectsNodeIsExpandedInEditorOutline" : true,
-      "historyStackPosition" : 7
+      "historyStackPosition" : 8
     },
     "hidesStatusBarOnLaunch" : 0,
     "editorVersion" : 105,
-    "title" : "TOKYO2020",
+    "title" : "TOKYOGames",
     "formatVersion" : 105,
     "lastObjectID" : 10041,
     "simulatedSystemVersion" : 7,
@@ -769,7 +767,7 @@
     "statusbarVisibility" : 0,
     "targetedDeviceFamily" : "iOS-Universal",
     "appleAppCategory" : "",
-    "editedObject" : "Scene44026",
+    "editedObject" : "Scene1",
     "projectID" : "",
     "companyName" : "appsoluteGmbH",
     "windowFrame" : "285 91 960 640 0 0 1440 878 ",
@@ -786,7 +784,7 @@
       "contentType" : "image\/png",
       "$id" : "ResourceReference11236",
       "size" : 52861,
-      "resourceID" : "5A3C5186-D2A6-495E-A369-4AA30AC1FB64-1968-00000EAEE042E8FA.png",
+      "resourceID" : "22BE7BC2-1713-4DAC-A5C3-F377594BDD89-2283-00000E720987C568.png",
       "$domain" : "appDoo",
       "shouldSync" : true,
       "actionInfo" : {
@@ -798,9 +796,9 @@
         "$domain" : "appDoo"
       },
       "originalFileInfo" : {
-        "absolutePath" : "\/Users\/dirkeinecke\/Dropbox\/appsolute\/Projects\/appDoo\/Projekte\/Weihnachtslieder\/appdoo-AppIcon.png",
+        "absolutePath" : "\/Users\/dirkeinecke\/Dropbox\/appsolute\/Projects\/appdoo\/Projects\/TOKYO Games\/appdoo-TOKYO-Games\/appdoo-AppIcon.png",
         "relativePath" : "..\/appdoo-AppIcon.png",
-        "modificationTime" : 1512470000,
+        "modificationTime" : 1541756531.5156896,
         "$type" : "FileInfo",
         "$domain" : "appDoo"
       },
