@@ -1,1 +1,1 @@
-# TOKYO 2020
+# TOKYO Games
