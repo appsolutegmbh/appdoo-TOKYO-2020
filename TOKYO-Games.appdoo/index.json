@@ -22,7 +22,7 @@
       "$id" : "UITabBar6007",
       "barStyle" : 0,
       "heightIsEditable" : false,
-      "$domain" : "appDoo.iOS",
+      "$domain" : "appdoo.iOS",
       "userInteractionEnabled" : true,
       "autoresizingMask" : 2,
       "size" : {
@@ -31,7 +31,7 @@
       }
     },
     "$type" : "UITabBarController",
-    "$domain" : "appDoo.iOS"
+    "$domain" : "appdoo.iOS"
   },
   "scenes" : [
     {
@@ -44,9 +44,9 @@
       "v_separateStatusBar" : false,
       "supportedInterfaceOrientations" : 2,
       "showsTabBar" : false,
-      "$domain" : "appDoo.iOS",
+      "$domain" : "appdoo.iOS",
       "previewSize" : {
-        "width" : 568,
+        "width" : 640,
         "height" : 320
       },
       "segues" : [
@@ -54,13 +54,13 @@
           "destinationSceneID" : "Scene44026",
           "viewID" : "UIBarButtonItem45369",
           "$type" : "Segue",
-          "$domain" : "appDoo.iOS"
+          "$domain" : "appdoo.iOS"
         },
         {
           "destinationSceneID" : "Scene44026",
           "viewID" : "UIButton10056",
           "$type" : "Segue",
-          "$domain" : "appDoo.iOS"
+          "$domain" : "appdoo.iOS"
         }
       ],
       "hasCustomInterfaceOrientations" : false,
@@ -78,14 +78,14 @@
             "actionType" : "objectAction",
             "objectActionID" : "",
             "$type" : "ActionInfo",
-            "$domain" : "appDoo"
+            "$domain" : "appdoo"
           },
           "script" : "var now_date = new Date();\nvar event_seconds = Math.floor(Date.UTC(2020, 6, 24, 20, 0, 0) \/ 1000);\nvar now_seconds = Math.floor(now_date.getTime() \/ 1000);\n\nvar event_time_offset = -540;\nnow_seconds = now_seconds - (event_time_offset * 60);\n\nvar prepared_days = (event_seconds - now_seconds);\nvar prepared_hours = (event_seconds - now_seconds) \/ 60;\nvar prepared_minutes = (event_seconds - now_seconds) \/ 3600;\nvar prepared_seconds = (event_seconds - now_seconds) \/ 86400;\n\nvar countdown_days = parseInt(Math.floor(prepared_seconds));\nvar countdown_hours = parseInt(Math.floor(prepared_minutes) - (countdown_days * 24));\nvar countdown_minutes = parseInt(Math.floor(prepared_hours) - (((countdown_days * 24) * 60) + (countdown_hours * 60)));\nvar countdown_seconds = parseInt(Math.floor(prepared_days) - (((((countdown_days * 24) * 60) + (countdown_hours * 60)) * 60) + countdown_minutes * 60));\n\nreturn '<div id=\"circle\"><\/div><span class=\"value\">'+countdown_days+'<\/span> <span class=\"unit\">'+(countdown_days == 1 ? 'day' : 'days')+'<\/span> <span class=\"value\">'+countdown_hours+'<\/span> <span class=\"unit\">'+(countdown_hours == 1 ? 'hour' : 'hours')+'<\/span> <span class=\"value\">'+countdown_minutes+'<\/span> <span class=\"unit\">min<\/span> <span class=\"value\">'+countdown_seconds+'<\/span> <span class=\"unit\">sec<\/span>';",
           "inputDataSource2ID" : "",
           "inputDataSourceID" : "",
           "evaluatesImmediately" : true,
           "localData" : "var now_date = new Date();\nvar event_seconds = Math.floor(Date.UTC(2020, 6, 24, 20, 0, 0) \/ 1000);\nvar now_seconds = Math.floor(now_date.getTime() \/ 1000);\n\nvar event_time_offset = -540;\nnow_seconds = now_seconds - (event_time_offset * 60);\n\nvar prepared_days = (event_seconds - now_seconds);\nvar prepared_hours = (event_seconds - now_seconds) \/ 60;\nvar prepared_minutes = (event_seconds - now_seconds) \/ 3600;\nvar prepared_seconds = (event_seconds - now_seconds) \/ 86400;\n\nvar countdown_days = parseInt(Math.floor(prepared_seconds));\nvar countdown_hours = parseInt(Math.floor(prepared_minutes) - (countdown_days * 24));\nvar countdown_minutes = parseInt(Math.floor(prepared_hours) - (((countdown_days * 24) * 60) + (countdown_hours * 60)));\nvar countdown_seconds = parseInt(Math.floor(prepared_days) - (((((countdown_days * 24) * 60) + (countdown_hours * 60)) * 60) + countdown_minutes * 60));\n\nreturn '<div id=\"circle\"><\/div><span class=\"value\">'+countdown_days+'<\/span> <span class=\"unit\">'+(countdown_days == 1 ? 'day' : 'days')+'<\/span> <span class=\"value\">'+countdown_hours+'<\/span> <span class=\"unit\">'+(countdown_hours == 1 ? 'hour' : 'hours')+'<\/span> <span class=\"value\">'+countdown_minutes+'<\/span> <span class=\"unit\">min<\/span> <span class=\"value\">'+countdown_seconds+'<\/span> <span class=\"unit\">sec<\/span>';",
-          "contents" : "<div id=\"circle\"><\/div><span class=\"value\">623<\/span> <span class=\"unit\">days<\/span> <span class=\"value\">1<\/span> <span class=\"unit\">hour<\/span> <span class=\"value\">13<\/span> <span class=\"unit\">min<\/span> <span class=\"value\">29<\/span> <span class=\"unit\">sec<\/span>",
+          "contents" : "<div id=\"circle\"><\/div><span class=\"value\">525<\/span> <span class=\"unit\">days<\/span> <span class=\"value\">2<\/span> <span class=\"unit\">hours<\/span> <span class=\"value\">2<\/span> <span class=\"unit\">min<\/span> <span class=\"value\">36<\/span> <span class=\"unit\">sec<\/span>",
           "name" : "DP - Countdown",
           "$type" : "JavaScriptContainer"
         },
@@ -96,7 +96,7 @@
             "$type" : "ActionInfo",
             "actionType" : "objectAction",
             "modalTransitionStyle" : "-1",
-            "$domain" : "appDoo",
+            "$domain" : "appdoo",
             "objectActionID" : "evaluate",
             "type" : "objectAction",
             "objectID" : "JavaScriptContainer10118"
@@ -114,19 +114,19 @@
           "$id" : "UITabBarItem9436",
           "title" : " ",
           "$type" : "UITabBarItem",
-          "$domain" : "appDoo.iOS"
+          "$domain" : "appdoo.iOS"
         },
         "title" : " ",
         "viewData" : {
           "isExpandedInEditorOutline" : true,
-          "$id" : "UIView6636",
           "scrollLeft" : 0,
+          "$id" : "UIView6636",
           "position" : {
             "top" : 0,
             "left" : 0
           },
           "backgroundColor" : "rgba(254,255,255,1.00)",
-          "$domain" : "appDoo.iOS",
+          "$domain" : "appdoo.iOS",
           "autoresizingMask" : 18,
           "frame" : {
             "origin" : {
@@ -134,7 +134,7 @@
               "y" : 0
             },
             "size" : {
-              "width" : 568,
+              "width" : 640,
               "height" : 320
             }
           },
@@ -153,7 +153,7 @@
                   "y" : 165
                 },
                 "size" : {
-                  "width" : 538,
+                  "width" : 610,
                   "height" : 161
                 }
               },
@@ -184,14 +184,14 @@
               ],
               "customCSS" : "html {\n\tpadding-top: 0pt;\n\ttext-align: center;\n}\n\n#circle {\n\tmargin: 0 auto 35pt auto;\n\tbackground-color: #ac2332;\n\twidth: 50pt;\n\theight: 50pt;\n\tborder-radius: 50%;\n}\n\n.value {\n\tfont-size: 40pt;\n\tcolor: #09225D;\n\tmargin-left: 5pt;\n}\n\n.unit {\n\tfont-size: 25pt;\n\tcolor: #09225D;\n\topacity: 0.46;\n}",
               "size" : {
-                "width" : 538,
+                "width" : 610,
                 "height" : 161
               },
               "alpha" : 1,
               "fontFamily" : "System",
               "autoresizingMask" : 34,
               "fontSize" : 15,
-              "content" : "<div id=\"circle\"><\/div><span class=\"value\">623<\/span> <span class=\"unit\">days<\/span> <span class=\"value\">1<\/span> <span class=\"unit\">hour<\/span> <span class=\"value\">13<\/span> <span class=\"unit\">min<\/span> <span class=\"value\">29<\/span> <span class=\"unit\">sec<\/span>"
+              "content" : "<div id=\"circle\"><\/div><span class=\"value\">525<\/span> <span class=\"unit\">days<\/span> <span class=\"value\">2<\/span> <span class=\"unit\">hours<\/span> <span class=\"value\">2<\/span> <span class=\"unit\">min<\/span> <span class=\"value\">36<\/span> <span class=\"unit\">sec<\/span>"
             },
             {
               "layoutMode" : "autoFitHeight",
@@ -207,14 +207,14 @@
                   "y" : 105
                 },
                 "size" : {
-                  "width" : 538,
+                  "width" : 610,
                   "height" : 30
                 }
               },
               "hidden" : false,
               "$id" : "UILabel10066",
               "textColor" : "rgba(9,34,93,1.00)",
-              "$domain" : "appDoo.iOS",
+              "$domain" : "appdoo.iOS",
               "heightIsEditable" : false,
               "transform" : "",
               "textAlignment" : "center",
@@ -230,7 +230,7 @@
                 }
               ],
               "size" : {
-                "width" : 538,
+                "width" : 610,
                 "height" : 30
               },
               "alpha" : 0.46000000000000002,
@@ -255,21 +255,21 @@
                   "y" : 56
                 },
                 "size" : {
-                  "width" : 538,
+                  "width" : 610,
                   "height" : 46
                 }
               },
               "hidden" : false,
               "$id" : "UILabel10068",
               "textColor" : "rgba(9,34,93,1.00)",
-              "$domain" : "appDoo.iOS",
+              "$domain" : "appdoo.iOS",
               "heightIsEditable" : false,
               "transform" : "",
               "textAlignment" : "center",
               "userInteractionEnabled" : true,
               "name" : "Headline",
               "size" : {
-                "width" : 538,
+                "width" : 610,
                 "height" : 46
               },
               "alpha" : 1,
@@ -294,13 +294,13 @@
                   "y" : 0
                 },
                 "size" : {
-                  "width" : 568,
+                  "width" : 640,
                   "height" : 320
                 }
               },
               "hidden" : false,
               "$id" : "UIButton10056",
-              "$domain" : "appDoo.iOS",
+              "$domain" : "appdoo.iOS",
               "heightIsEditable" : true,
               "transform" : "",
               "actionType" : "objectAction",
@@ -309,14 +309,14 @@
                 "actionType" : "showScene",
                 "modalTransitionStyle" : "UIModalTransitionStyleFlipHorizontal",
                 "destinationSceneID" : "Scene44026",
-                "$domain" : "appDoo",
+                "$domain" : "appdoo",
                 "objectActionID" : "",
                 "type" : "showScene"
               },
               "userInteractionEnabled" : true,
               "name" : "Info",
               "size" : {
-                "width" : 568,
+                "width" : 640,
                 "height" : 320
               },
               "alpha" : 1,
@@ -329,7 +329,7 @@
           ],
           "transform" : "",
           "size" : {
-            "width" : 568,
+            "width" : 640,
             "height" : 320
           },
           "heightIsEditable" : false,
@@ -341,28 +341,28 @@
           "$type" : "SceneRootView"
         },
         "$type" : "UIViewController",
-        "$domain" : "appDoo.iOS"
+        "$domain" : "appdoo.iOS"
       },
       "v_showsInTabBar" : false,
       "navigationObjectsNodeIsExpandedInEditorOutline" : true,
       "simulatedInterfaceOrientation" : "landscape",
       "selectedObjectIDs" : [
-        "UIButton10056"
+        "ResourceReference11236"
       ],
       "$type" : "Scene"
     },
     {
       "$id" : "Scene44026",
       "positionOnOverview" : {
-        "top" : 782,
-        "left" : -231
+        "top" : 772,
+        "left" : -234
       },
       "sceneObjectsNodeIsExpandedInEditorOutline" : true,
       "v_separateStatusBar" : false,
       "showsTabBar" : false,
-      "$domain" : "appDoo.iOS",
+      "$domain" : "appdoo.iOS",
       "previewSize" : {
-        "width" : 568,
+        "width" : 640,
         "height" : 320
       },
       "hasCustomInterfaceOrientations" : false,
@@ -373,7 +373,7 @@
           "$id" : "UITabBarItem44031",
           "title" : " ",
           "$type" : "UITabBarItem",
-          "$domain" : "appDoo.iOS"
+          "$domain" : "appdoo.iOS"
         },
         "title" : " ",
         "viewData" : {
@@ -385,7 +385,7 @@
             "left" : 0
           },
           "backgroundColor" : "rgba(254,255,255,1.00)",
-          "$domain" : "appDoo.iOS",
+          "$domain" : "appdoo.iOS",
           "autoresizingMask" : 18,
           "frame" : {
             "origin" : {
@@ -393,7 +393,7 @@
               "y" : 0
             },
             "size" : {
-              "width" : 568,
+              "width" : 640,
               "height" : 320
             }
           },
@@ -401,7 +401,7 @@
             {
               "layoutMode" : "autoFitHeight",
               "position" : {
-                "top" : 292,
+                "top" : 291,
                 "left" : 15
               },
               "fontName" : "_DEFAULT_",
@@ -409,24 +409,24 @@
               "frame" : {
                 "origin" : {
                   "x" : 15,
-                  "y" : 292
+                  "y" : 291
                 },
                 "size" : {
-                  "width" : 538,
+                  "width" : 610,
                   "height" : 14
                 }
               },
               "hidden" : false,
               "$id" : "UILabel16151",
               "textColor" : "rgba(94,94,94,1.00)",
-              "$domain" : "appDoo.iOS",
+              "$domain" : "appdoo.iOS",
               "heightIsEditable" : false,
               "transform" : "",
               "textAlignment" : "center",
               "userInteractionEnabled" : true,
               "name" : "Version",
               "size" : {
-                "width" : 538,
+                "width" : 610,
                 "height" : 14
               },
               "alpha" : 1,
@@ -451,7 +451,7 @@
                   "y" : 231
                 },
                 "size" : {
-                  "width" : 545,
+                  "width" : 617,
                   "height" : 22
                 }
               },
@@ -471,7 +471,7 @@
                 "actionType" : "objectAction",
                 "objectActionID" : "",
                 "$type" : "ActionInfo",
-                "$domain" : "appDoo"
+                "$domain" : "appdoo"
               },
               "userInteractionEnabled" : true,
               "layoutRelations" : [
@@ -485,7 +485,7 @@
               ],
               "name" : "mehr erfahren",
               "size" : {
-                "width" : 545,
+                "width" : 617,
                 "height" : 22
               },
               "alpha" : 1,
@@ -495,54 +495,7 @@
               "fontSize" : 20,
               "text" : "Learn more",
               "buttonStyle" : "custom",
-              "URLString" : "https:\/\/www.mamp.info\/appdoo\/"
-            },
-            {
-              "$id" : "UIImageView10780",
-              "style" : {
-                "borderTopLeftRadius" : "0px",
-                "borderBottomLeftRadius" : "0px",
-                "borderBottomRightRadius" : "0px",
-                "opacity" : "1",
-                "borderTopRightRadius" : "0px"
-              },
-              "position" : {
-                "top" : 69,
-                "left" : 244
-              },
-              "frame" : {
-                "origin" : {
-                  "x" : 244,
-                  "y" : 69
-                },
-                "size" : {
-                  "width" : 80,
-                  "height" : 80
-                }
-              },
-              "$domain" : "appDoo.iOS",
-              "autoresizingMask" : 39,
-              "imageURLString" : "",
-              "contentMode" : "scaleAspectFit",
-              "transform" : "",
-              "imageURLInfo" : {
-                "remoteImageURL" : "",
-                "localImageObjectID" : "ResourceReference11236",
-                "source" : "local"
-              },
-              "highlightedImageURLInfo" : {
-                "source" : "local"
-              },
-              "size" : {
-                "width" : 80,
-                "height" : 80
-              },
-              "alpha" : 1,
-              "isReferenced" : true,
-              "hidden" : false,
-              "cornerRadius" : 0,
-              "name" : "appdoo AppIcon",
-              "$type" : "UIImageView"
+              "URLString" : "http:\/\/www.appdoo.info"
             },
             {
               "layoutMode" : "autoFitHeight",
@@ -558,14 +511,14 @@
                   "y" : 179
                 },
                 "size" : {
-                  "width" : 538,
+                  "width" : 610,
                   "height" : 32
                 }
               },
               "hidden" : false,
               "$id" : "UILabel44034",
               "textColor" : "rgba(9,34,93,1.00)",
-              "$domain" : "appDoo.iOS",
+              "$domain" : "appdoo.iOS",
               "heightIsEditable" : false,
               "transform" : "",
               "textAlignment" : "center",
@@ -581,7 +534,7 @@
                 }
               ],
               "size" : {
-                "width" : 538,
+                "width" : 610,
                 "height" : 32
               },
               "alpha" : 1,
@@ -593,16 +546,63 @@
               "numberOfLines" : 0
             },
             {
+              "$id" : "UIImageView10780",
+              "style" : {
+                "borderTopLeftRadius" : "0px",
+                "borderBottomLeftRadius" : "0px",
+                "borderBottomRightRadius" : "0px",
+                "opacity" : "1",
+                "borderTopRightRadius" : "0px"
+              },
+              "position" : {
+                "top" : 69,
+                "left" : 280
+              },
+              "frame" : {
+                "origin" : {
+                  "x" : 280,
+                  "y" : 69
+                },
+                "size" : {
+                  "width" : 152,
+                  "height" : 80
+                }
+              },
+              "$domain" : "appdoo.iOS",
+              "autoresizingMask" : 39,
+              "imageURLString" : "",
+              "contentMode" : "scaleAspectFit",
+              "transform" : "",
+              "imageURLInfo" : {
+                "remoteImageURL" : "",
+                "localImageObjectID" : "ResourceReference9a2fa0f4f20a44a289e75096f62fdd0a",
+                "source" : "local"
+              },
+              "highlightedImageURLInfo" : {
+                "source" : "local"
+              },
+              "size" : {
+                "width" : 152,
+                "height" : 80
+              },
+              "alpha" : 1,
+              "isReferenced" : true,
+              "hidden" : false,
+              "cornerRadius" : 0,
+              "name" : "appdoo AppIcon",
+              "$type" : "UIImageView"
+            },
+            {
               "CSSTextColor" : "rgba(9,34,93,1.00)",
               "position" : {
                 "top" : 0,
-                "left" : 501
+                "left" : 573
               },
               "fontName" : "_DEFAULT_",
               "$type" : "UIButton",
               "frame" : {
                 "origin" : {
-                  "x" : 501,
+                  "x" : 573,
                   "y" : 0
                 },
                 "size" : {
@@ -612,7 +612,7 @@
               },
               "hidden" : false,
               "$id" : "UIButton10055",
-              "$domain" : "appDoo.iOS",
+              "$domain" : "appdoo.iOS",
               "heightIsEditable" : true,
               "transform" : "",
               "actionType" : "objectAction",
@@ -622,7 +622,7 @@
                 "actionType" : "navigateBack",
                 "objectActionID" : "",
                 "$type" : "ActionInfo",
-                "$domain" : "appDoo"
+                "$domain" : "appdoo"
               },
               "userInteractionEnabled" : true,
               "name" : "Close",
@@ -640,7 +640,7 @@
           ],
           "transform" : "",
           "size" : {
-            "width" : 568,
+            "width" : 640,
             "height" : 320
           },
           "heightIsEditable" : false,
@@ -651,10 +651,13 @@
           "$type" : "SceneRootView"
         },
         "$type" : "UIViewController",
-        "$domain" : "appDoo.iOS"
+        "$domain" : "appdoo.iOS"
       },
       "v_showsInTabBar" : false,
       "simulatedInterfaceOrientation" : "landscape",
+      "selectedObjectIDs" : [
+        "Hyperlink44043"
+      ],
       "$type" : "Scene"
     }
   ],
@@ -664,7 +667,7 @@
     "fontName" : "_DEFAULT_",
     "pointSize" : 10,
     "$type" : "UIFont",
-    "$domain" : "appDoo.iOS"
+    "$domain" : "appdoo.iOS"
   },
   "barButtonItemFont" : {
     "$id" : "UIFont45368",
@@ -672,7 +675,7 @@
     "fontName" : "_DEFAULT_",
     "pointSize" : 17,
     "$type" : "UIFont",
-    "$domain" : "appDoo.iOS"
+    "$domain" : "appdoo.iOS"
   },
   "navigationBarFont" : {
     "$id" : "UIFont10029",
@@ -680,45 +683,45 @@
     "fontName" : "_DEFAULT_BOLD_",
     "pointSize" : 17,
     "$type" : "UIFont",
-    "$domain" : "appDoo.iOS"
+    "$domain" : "appdoo.iOS"
   },
-  "$domain" : "appDoo",
+  "$domain" : "appdoo",
   "metadata" : {
     "launchImages" : {
       "phone72" : {
         "$type" : "ImageReference",
-        "$domain" : "appDoo",
+        "$domain" : "appdoo",
         "imageID" : "79E95F56-88A8-4875-ACA1-A8359074F32E-940-0000096A7619A981.png"
       },
       "landscape" : {
         "$type" : "ImageReference",
-        "$domain" : "appDoo",
+        "$domain" : "appdoo",
         "imageID" : "0217665C-9499-4DB2-9446-6F5245AC1D91-940-00000967D7191F5E.png"
       },
       "phoneX" : {
         "$type" : "ImageReference",
-        "$domain" : "appDoo",
+        "$domain" : "appdoo",
         "imageID" : "C34E7E12-D67E-4BBB-9EA4-90FAF2C82DDF-940-00000969FCB5332F.png"
       },
       "portrait" : {
         "$type" : "ImageReference",
-        "$domain" : "appDoo",
+        "$domain" : "appdoo",
         "imageID" : "285C3470-74CA-4DE0-AE60-2DD9F6201D36-940-000009685DDE4B4A.png"
       },
       "phone71" : {
         "$type" : "ImageReference",
-        "$domain" : "appDoo",
+        "$domain" : "appdoo",
         "imageID" : "60891074-88E4-4F73-94C2-1B1E2782FB7A-940-0000096966AF012B.png"
       },
       "phone40" : {
         "$type" : "ImageReference",
-        "$domain" : "appDoo",
+        "$domain" : "appdoo",
         "imageID" : "BE451CC6-233E-486F-8320-3D4B9F0AA8B6-940-0000096AF15D6532.png"
       }
     },
     "iconImage" : {
       "$type" : "ImageReference",
-      "$domain" : "appDoo",
+      "$domain" : "appdoo",
       "imageID" : "8914A95E-F991-464D-BDA8-F2F8473A49BE-2405-0000108B748699E0.png"
     },
     "editorAppearance" : {
@@ -729,6 +732,8 @@
       ],
       "contentScale" : 1,
       "historyStack" : [
+        "Scene1",
+        "Scene44026",
         "Scene1",
         "Scene44026",
         "Scene1",
@@ -752,12 +757,12 @@
       "inspectorIsVisible" : true,
       "elementListIsVisible" : true,
       "globalObjectsNodeIsExpandedInEditorOutline" : true,
-      "historyStackPosition" : 9
+      "historyStackPosition" : 11
     },
     "hidesStatusBarOnLaunch" : 0,
-    "editorVersion" : 105,
+    "editorVersion" : 363,
     "title" : "TOKYOGames",
-    "formatVersion" : 105,
+    "formatVersion" : 363,
     "lastObjectID" : 10041,
     "simulatedSystemVersion" : 7,
     "supportedInterfaceOrientations" : 24,
@@ -783,10 +788,10 @@
     {
       "$type" : "ResourceReference",
       "contentType" : "image\/png",
-      "$id" : "ResourceReference11236",
-      "size" : 52861,
-      "resourceID" : "22BE7BC2-1713-4DAC-A5C3-F377594BDD89-2283-00000E720987C568.png",
-      "$domain" : "appDoo",
+      "$id" : "ResourceReference9a2fa0f4f20a44a289e75096f62fdd0a",
+      "size" : 457959,
+      "resourceID" : "0991132D-C80A-4142-AA2C-A430F154D9E9-3644-00000EB21CAEBD18.png",
+      "$domain" : "appdoo",
       "shouldSync" : true,
       "actionInfo" : {
         "type" : "objectAction",
@@ -794,14 +799,14 @@
         "actionType" : "objectAction",
         "objectActionID" : "",
         "$type" : "ActionInfo",
-        "$domain" : "appDoo"
+        "$domain" : "appdoo"
       },
       "originalFileInfo" : {
-        "absolutePath" : "\/Users\/dirkeinecke\/Dropbox\/appsolute\/Projects\/appdoo\/Projects\/TOKYO Games\/appdoo-TOKYO-Games\/appdoo-AppIcon.png",
-        "relativePath" : "..\/appdoo-AppIcon.png",
-        "modificationTime" : 1541756531.5156896,
+        "absolutePath" : "\/Users\/dirkeinecke\/Desktop\/appdoo-AppIcon.png",
+        "relativePath" : "..\/..\/..\/..\/..\/..\/..\/..\/Desktop\/appdoo-AppIcon.png",
+        "modificationTime" : 1549882787.9610798,
         "$type" : "FileInfo",
-        "$domain" : "appDoo"
+        "$domain" : "appdoo"
       },
       "name" : "appdoo-AppIcon.png"
     }
