@@ -120,7 +120,7 @@
         "viewData" : {
           "isExpandedInEditorOutline" : true,
           "$id" : "UIView6636",
-          "scrollLeft" : 0,
+          "$type" : "SceneRootView",
           "position" : {
             "top" : 0,
             "left" : 0
@@ -338,7 +338,7 @@
           "hidden" : false,
           "userInteractionEnabled" : true,
           "name" : "Ansicht",
-          "$type" : "SceneRootView"
+          "scrollLeft" : 0
         },
         "$type" : "UIViewController",
         "$domain" : "appdoo.iOS"
@@ -378,8 +378,8 @@
         "title" : " ",
         "viewData" : {
           "isExpandedInEditorOutline" : true,
-          "$id" : "SceneRootView44033",
           "scrollLeft" : 0,
+          "$id" : "SceneRootView44033",
           "position" : {
             "top" : 0,
             "left" : 0
@@ -440,7 +440,7 @@
             {
               "CSSTextColor" : "rgba(204,7,52,1.00)",
               "position" : {
-                "top" : 231,
+                "top" : -473,
                 "left" : 15
               },
               "fontName" : "_DEFAULT_",
@@ -448,7 +448,7 @@
               "frame" : {
                 "origin" : {
                   "x" : 15,
-                  "y" : 231
+                  "y" : -473
                 },
                 "size" : {
                   "width" : 545,
@@ -466,11 +466,11 @@
               "transform" : "",
               "textAlignment" : "center",
               "actionInfo" : {
-                "$type" : "ActionInfo",
+                "type" : "objectAction",
                 "modalTransitionStyle" : "-1",
                 "actionType" : "objectAction",
                 "objectActionID" : "",
-                "type" : "objectAction",
+                "$type" : "ActionInfo",
                 "$domain" : "appdoo"
               },
               "userInteractionEnabled" : true,
@@ -512,7 +512,7 @@
                 },
                 "size" : {
                   "width" : 538,
-                  "height" : 32
+                  "height" : -672
                 }
               },
               "hidden" : false,
@@ -535,7 +535,7 @@
               ],
               "size" : {
                 "width" : 538,
-                "height" : 32
+                "height" : -672
               },
               "alpha" : 1,
               "fontSize" : 25,
@@ -569,7 +569,7 @@
                 }
               },
               "$domain" : "appdoo.iOS",
-              "autoresizingMask" : 34,
+              "autoresizingMask" : 37,
               "imageURLString" : "",
               "contentMode" : "scaleAspectFit",
               "transform" : "",
@@ -617,11 +617,11 @@
               "transform" : "",
               "actionType" : "objectAction",
               "actionInfo" : {
-                "$type" : "ActionInfo",
+                "type" : "navigateBack",
                 "modalTransitionStyle" : "-1",
                 "actionType" : "navigateBack",
                 "objectActionID" : "",
-                "type" : "navigateBack",
+                "$type" : "ActionInfo",
                 "$domain" : "appdoo"
               },
               "userInteractionEnabled" : true,
@@ -767,7 +767,7 @@
     "lastObjectID" : 10041,
     "simulatedSystemVersion" : 7,
     "supportedInterfaceOrientations" : 24,
-    "deviceProfile" : "iPhone-Widescreen",
+    "deviceProfile" : "iPhone-5",
     "appleAppBundlePrefix" : "",
     "version" : "1.0",
     "defaultLanguage" : "en",
