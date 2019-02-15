@@ -37,8 +37,8 @@
     {
       "$id" : "Scene1",
       "positionOnOverview" : {
-        "top" : 170,
-        "left" : -235
+        "top" : 166,
+        "left" : -233
       },
       "sceneObjectsNodeIsExpandedInEditorOutline" : true,
       "v_separateStatusBar" : false,
@@ -46,7 +46,7 @@
       "showsTabBar" : false,
       "$domain" : "appdoo.iOS",
       "previewSize" : {
-        "width" : 640,
+        "width" : 568,
         "height" : 320
       },
       "segues" : [
@@ -85,7 +85,7 @@
           "inputDataSourceID" : "",
           "evaluatesImmediately" : true,
           "localData" : "var now_date = new Date();\nvar event_seconds = Math.floor(Date.UTC(2020, 6, 24, 20, 0, 0) \/ 1000);\nvar now_seconds = Math.floor(now_date.getTime() \/ 1000);\n\nvar event_time_offset = -540;\nnow_seconds = now_seconds - (event_time_offset * 60);\n\nvar prepared_days = (event_seconds - now_seconds);\nvar prepared_hours = (event_seconds - now_seconds) \/ 60;\nvar prepared_minutes = (event_seconds - now_seconds) \/ 3600;\nvar prepared_seconds = (event_seconds - now_seconds) \/ 86400;\n\nvar countdown_days = parseInt(Math.floor(prepared_seconds));\nvar countdown_hours = parseInt(Math.floor(prepared_minutes) - (countdown_days * 24));\nvar countdown_minutes = parseInt(Math.floor(prepared_hours) - (((countdown_days * 24) * 60) + (countdown_hours * 60)));\nvar countdown_seconds = parseInt(Math.floor(prepared_days) - (((((countdown_days * 24) * 60) + (countdown_hours * 60)) * 60) + countdown_minutes * 60));\n\nreturn '<div id=\"circle\"><\/div><span class=\"value\">'+countdown_days+'<\/span> <span class=\"unit\">'+(countdown_days == 1 ? 'day' : 'days')+'<\/span> <span class=\"value\">'+countdown_hours+'<\/span> <span class=\"unit\">'+(countdown_hours == 1 ? 'hour' : 'hours')+'<\/span> <span class=\"value\">'+countdown_minutes+'<\/span> <span class=\"unit\">min<\/span> <span class=\"value\">'+countdown_seconds+'<\/span> <span class=\"unit\">sec<\/span>';",
-          "contents" : "<div id=\"circle\"><\/div><span class=\"value\">525<\/span> <span class=\"unit\">days<\/span> <span class=\"value\">2<\/span> <span class=\"unit\">hours<\/span> <span class=\"value\">2<\/span> <span class=\"unit\">min<\/span> <span class=\"value\">36<\/span> <span class=\"unit\">sec<\/span>",
+          "contents" : "<div id=\"circle\"><\/div><span class=\"value\">525<\/span> <span class=\"unit\">days<\/span> <span class=\"value\">0<\/span> <span class=\"unit\">hours<\/span> <span class=\"value\">53<\/span> <span class=\"unit\">min<\/span> <span class=\"value\">0<\/span> <span class=\"unit\">sec<\/span>",
           "name" : "DP - Countdown",
           "$type" : "JavaScriptContainer"
         },
@@ -119,8 +119,8 @@
         "title" : " ",
         "viewData" : {
           "isExpandedInEditorOutline" : true,
-          "scrollLeft" : 0,
           "$id" : "UIView6636",
+          "scrollLeft" : 0,
           "position" : {
             "top" : 0,
             "left" : 0
@@ -134,7 +134,7 @@
               "y" : 0
             },
             "size" : {
-              "width" : 640,
+              "width" : 568,
               "height" : 320
             }
           },
@@ -153,7 +153,7 @@
                   "y" : 165
                 },
                 "size" : {
-                  "width" : 610,
+                  "width" : 538,
                   "height" : 161
                 }
               },
@@ -184,14 +184,14 @@
               ],
               "customCSS" : "html {\n\tpadding-top: 0pt;\n\ttext-align: center;\n}\n\n#circle {\n\tmargin: 0 auto 35pt auto;\n\tbackground-color: #ac2332;\n\twidth: 50pt;\n\theight: 50pt;\n\tborder-radius: 50%;\n}\n\n.value {\n\tfont-size: 40pt;\n\tcolor: #09225D;\n\tmargin-left: 5pt;\n}\n\n.unit {\n\tfont-size: 25pt;\n\tcolor: #09225D;\n\topacity: 0.46;\n}",
               "size" : {
-                "width" : 610,
+                "width" : 538,
                 "height" : 161
               },
               "alpha" : 1,
               "fontFamily" : "System",
               "autoresizingMask" : 34,
               "fontSize" : 15,
-              "content" : "<div id=\"circle\"><\/div><span class=\"value\">525<\/span> <span class=\"unit\">days<\/span> <span class=\"value\">2<\/span> <span class=\"unit\">hours<\/span> <span class=\"value\">2<\/span> <span class=\"unit\">min<\/span> <span class=\"value\">36<\/span> <span class=\"unit\">sec<\/span>"
+              "content" : "<div id=\"circle\"><\/div><span class=\"value\">525<\/span> <span class=\"unit\">days<\/span> <span class=\"value\">0<\/span> <span class=\"unit\">hours<\/span> <span class=\"value\">53<\/span> <span class=\"unit\">min<\/span> <span class=\"value\">0<\/span> <span class=\"unit\">sec<\/span>"
             },
             {
               "layoutMode" : "autoFitHeight",
@@ -207,7 +207,7 @@
                   "y" : 105
                 },
                 "size" : {
-                  "width" : 610,
+                  "width" : 538,
                   "height" : 30
                 }
               },
@@ -230,7 +230,7 @@
                 }
               ],
               "size" : {
-                "width" : 610,
+                "width" : 538,
                 "height" : 30
               },
               "alpha" : 0.46000000000000002,
@@ -255,7 +255,7 @@
                   "y" : 56
                 },
                 "size" : {
-                  "width" : 610,
+                  "width" : 538,
                   "height" : 46
                 }
               },
@@ -269,7 +269,7 @@
               "userInteractionEnabled" : true,
               "name" : "Headline",
               "size" : {
-                "width" : 610,
+                "width" : 538,
                 "height" : 46
               },
               "alpha" : 1,
@@ -294,7 +294,7 @@
                   "y" : 0
                 },
                 "size" : {
-                  "width" : 640,
+                  "width" : 568,
                   "height" : 320
                 }
               },
@@ -316,7 +316,7 @@
               "userInteractionEnabled" : true,
               "name" : "Info",
               "size" : {
-                "width" : 640,
+                "width" : 568,
                 "height" : 320
               },
               "alpha" : 1,
@@ -329,7 +329,7 @@
           ],
           "transform" : "",
           "size" : {
-            "width" : 640,
+            "width" : 568,
             "height" : 320
           },
           "heightIsEditable" : false,
@@ -347,14 +347,14 @@
       "navigationObjectsNodeIsExpandedInEditorOutline" : true,
       "simulatedInterfaceOrientation" : "landscape",
       "selectedObjectIDs" : [
-        "ResourceReference11236"
+        "UILabel10068"
       ],
       "$type" : "Scene"
     },
     {
       "$id" : "Scene44026",
       "positionOnOverview" : {
-        "top" : 772,
+        "top" : 748,
         "left" : -234
       },
       "sceneObjectsNodeIsExpandedInEditorOutline" : true,
@@ -362,7 +362,7 @@
       "showsTabBar" : false,
       "$domain" : "appdoo.iOS",
       "previewSize" : {
-        "width" : 640,
+        "width" : 568,
         "height" : 320
       },
       "hasCustomInterfaceOrientations" : false,
@@ -378,8 +378,8 @@
         "title" : " ",
         "viewData" : {
           "isExpandedInEditorOutline" : true,
-          "scrollLeft" : 0,
           "$id" : "SceneRootView44033",
+          "scrollLeft" : 0,
           "position" : {
             "top" : 0,
             "left" : 0
@@ -393,7 +393,7 @@
               "y" : 0
             },
             "size" : {
-              "width" : 640,
+              "width" : 568,
               "height" : 320
             }
           },
@@ -412,7 +412,7 @@
                   "y" : 291
                 },
                 "size" : {
-                  "width" : 610,
+                  "width" : 538,
                   "height" : 14
                 }
               },
@@ -426,7 +426,7 @@
               "userInteractionEnabled" : true,
               "name" : "Version",
               "size" : {
-                "width" : 610,
+                "width" : 538,
                 "height" : 14
               },
               "alpha" : 1,
@@ -451,7 +451,7 @@
                   "y" : 231
                 },
                 "size" : {
-                  "width" : 617,
+                  "width" : 545,
                   "height" : 22
                 }
               },
@@ -466,11 +466,11 @@
               "transform" : "",
               "textAlignment" : "center",
               "actionInfo" : {
-                "type" : "objectAction",
+                "$type" : "ActionInfo",
                 "modalTransitionStyle" : "-1",
                 "actionType" : "objectAction",
                 "objectActionID" : "",
-                "$type" : "ActionInfo",
+                "type" : "objectAction",
                 "$domain" : "appdoo"
               },
               "userInteractionEnabled" : true,
@@ -485,7 +485,7 @@
               ],
               "name" : "mehr erfahren",
               "size" : {
-                "width" : 617,
+                "width" : 545,
                 "height" : 22
               },
               "alpha" : 1,
@@ -511,7 +511,7 @@
                   "y" : 179
                 },
                 "size" : {
-                  "width" : 610,
+                  "width" : 538,
                   "height" : 32
                 }
               },
@@ -534,7 +534,7 @@
                 }
               ],
               "size" : {
-                "width" : 610,
+                "width" : 538,
                 "height" : 32
               },
               "alpha" : 1,
@@ -556,20 +556,20 @@
               },
               "position" : {
                 "top" : 69,
-                "left" : 280
+                "left" : 244
               },
               "frame" : {
                 "origin" : {
-                  "x" : 280,
+                  "x" : 244,
                   "y" : 69
                 },
                 "size" : {
-                  "width" : 152,
+                  "width" : 80,
                   "height" : 80
                 }
               },
               "$domain" : "appdoo.iOS",
-              "autoresizingMask" : 39,
+              "autoresizingMask" : 34,
               "imageURLString" : "",
               "contentMode" : "scaleAspectFit",
               "transform" : "",
@@ -582,7 +582,7 @@
                 "source" : "local"
               },
               "size" : {
-                "width" : 152,
+                "width" : 80,
                 "height" : 80
               },
               "alpha" : 1,
@@ -596,13 +596,13 @@
               "CSSTextColor" : "rgba(9,34,93,1.00)",
               "position" : {
                 "top" : 0,
-                "left" : 573
+                "left" : 501
               },
               "fontName" : "_DEFAULT_",
               "$type" : "UIButton",
               "frame" : {
                 "origin" : {
-                  "x" : 573,
+                  "x" : 501,
                   "y" : 0
                 },
                 "size" : {
@@ -617,11 +617,11 @@
               "transform" : "",
               "actionType" : "objectAction",
               "actionInfo" : {
-                "type" : "navigateBack",
+                "$type" : "ActionInfo",
                 "modalTransitionStyle" : "-1",
                 "actionType" : "navigateBack",
                 "objectActionID" : "",
-                "$type" : "ActionInfo",
+                "type" : "navigateBack",
                 "$domain" : "appdoo"
               },
               "userInteractionEnabled" : true,
@@ -640,7 +640,7 @@
           ],
           "transform" : "",
           "size" : {
-            "width" : 640,
+            "width" : 568,
             "height" : 320
           },
           "heightIsEditable" : false,
@@ -655,9 +655,6 @@
       },
       "v_showsInTabBar" : false,
       "simulatedInterfaceOrientation" : "landscape",
-      "selectedObjectIDs" : [
-        "Hyperlink44043"
-      ],
       "$type" : "Scene"
     }
   ],
@@ -726,12 +723,16 @@
     },
     "editorAppearance" : {
       "fileReferencesNodeIsExpandedInEditorOutline" : true,
-      "inspectorCurrentSegment" : 0,
+      "inspectorCurrentSegment" : 1,
       "collapsedNewItemSections" : [
 
       ],
       "contentScale" : 1,
       "historyStack" : [
+        "Scene1",
+        "Scene44026",
+        "Scene1",
+        "Scene44026",
         "Scene1",
         "Scene44026",
         "Scene1",
@@ -757,7 +758,7 @@
       "inspectorIsVisible" : true,
       "elementListIsVisible" : true,
       "globalObjectsNodeIsExpandedInEditorOutline" : true,
-      "historyStackPosition" : 11
+      "historyStackPosition" : 15
     },
     "hidesStatusBarOnLaunch" : 0,
     "editorVersion" : 363,
@@ -775,7 +776,7 @@
     "appleAppCategory" : "",
     "editedObject" : "Scene44026",
     "projectID" : "",
-    "companyName" : "appsoluteGmbH",
+    "companyName" : "MAMPGmbH",
     "windowFrame" : "285 91 960 640 0 0 1440 878 ",
     "windowIsFullScreen" : false,
     "rootInstance" : "TabBarController",
