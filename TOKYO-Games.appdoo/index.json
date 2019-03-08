@@ -805,7 +805,7 @@
         "$domain" : "appdoo"
       },
       "originalFileInfo" : {
-        "absolutePath" : "\/Users\/dirkeinecke\/Dropbox\/appsolute\/Projects\/appdoo\/Projects\/TOKYO Games\/appdoo-TOKYO-Games\/appdoo-AppIcon.png",
+        "absolutePath" : "",
         "relativePath" : "..\/appdoo-AppIcon.png",
         "modificationTime" : 1549882787.9610798,
         "$type" : "FileInfo",
