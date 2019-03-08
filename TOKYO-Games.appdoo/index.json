@@ -37,8 +37,8 @@
     {
       "$id" : "Scene1",
       "positionOnOverview" : {
-        "top" : 166,
-        "left" : -233
+        "top" : 156,
+        "left" : -243
       },
       "sceneObjectsNodeIsExpandedInEditorOutline" : true,
       "v_separateStatusBar" : false,
@@ -85,7 +85,7 @@
           "inputDataSourceID" : "",
           "evaluatesImmediately" : true,
           "localData" : "var now_date = new Date();\nvar event_seconds = Math.floor(Date.UTC(2020, 6, 24, 20, 0, 0) \/ 1000);\nvar now_seconds = Math.floor(now_date.getTime() \/ 1000);\n\nvar event_time_offset = -540;\nnow_seconds = now_seconds - (event_time_offset * 60);\n\nvar prepared_days = (event_seconds - now_seconds);\nvar prepared_hours = (event_seconds - now_seconds) \/ 60;\nvar prepared_minutes = (event_seconds - now_seconds) \/ 3600;\nvar prepared_seconds = (event_seconds - now_seconds) \/ 86400;\n\nvar countdown_days = parseInt(Math.floor(prepared_seconds));\nvar countdown_hours = parseInt(Math.floor(prepared_minutes) - (countdown_days * 24));\nvar countdown_minutes = parseInt(Math.floor(prepared_hours) - (((countdown_days * 24) * 60) + (countdown_hours * 60)));\nvar countdown_seconds = parseInt(Math.floor(prepared_days) - (((((countdown_days * 24) * 60) + (countdown_hours * 60)) * 60) + countdown_minutes * 60));\n\nreturn '<div id=\"circle\"><\/div><span class=\"value\">'+countdown_days+'<\/span> <span class=\"unit\">'+(countdown_days == 1 ? 'day' : 'days')+'<\/span> <span class=\"value\">'+countdown_hours+'<\/span> <span class=\"unit\">'+(countdown_hours == 1 ? 'hour' : 'hours')+'<\/span> <span class=\"value\">'+countdown_minutes+'<\/span> <span class=\"unit\">min<\/span> <span class=\"value\">'+countdown_seconds+'<\/span> <span class=\"unit\">sec<\/span>';",
-          "contents" : "<div id=\"circle\"><\/div><span class=\"value\">525<\/span> <span class=\"unit\">days<\/span> <span class=\"value\">0<\/span> <span class=\"unit\">hours<\/span> <span class=\"value\">53<\/span> <span class=\"unit\">min<\/span> <span class=\"value\">0<\/span> <span class=\"unit\">sec<\/span>",
+          "contents" : "<div id=\"circle\"><\/div><span class=\"value\">525<\/span> <span class=\"unit\">days<\/span> <span class=\"value\">0<\/span> <span class=\"unit\">hours<\/span> <span class=\"value\">36<\/span> <span class=\"unit\">min<\/span> <span class=\"value\">30<\/span> <span class=\"unit\">sec<\/span>",
           "name" : "DP - Countdown",
           "$type" : "JavaScriptContainer"
         },
@@ -191,7 +191,7 @@
               "fontFamily" : "System",
               "autoresizingMask" : 34,
               "fontSize" : 15,
-              "content" : "<div id=\"circle\"><\/div><span class=\"value\">525<\/span> <span class=\"unit\">days<\/span> <span class=\"value\">0<\/span> <span class=\"unit\">hours<\/span> <span class=\"value\">53<\/span> <span class=\"unit\">min<\/span> <span class=\"value\">0<\/span> <span class=\"unit\">sec<\/span>"
+              "content" : "<div id=\"circle\"><\/div><span class=\"value\">525<\/span> <span class=\"unit\">days<\/span> <span class=\"value\">0<\/span> <span class=\"unit\">hours<\/span> <span class=\"value\">36<\/span> <span class=\"unit\">min<\/span> <span class=\"value\">30<\/span> <span class=\"unit\">sec<\/span>"
             },
             {
               "layoutMode" : "autoFitHeight",
@@ -347,15 +347,15 @@
       "navigationObjectsNodeIsExpandedInEditorOutline" : true,
       "simulatedInterfaceOrientation" : "landscape",
       "selectedObjectIDs" : [
-        "UILabel10068"
+        "SimpleHTMLView10116"
       ],
       "$type" : "Scene"
     },
     {
       "$id" : "Scene44026",
       "positionOnOverview" : {
-        "top" : 748,
-        "left" : -234
+        "top" : 718,
+        "left" : -240
       },
       "sceneObjectsNodeIsExpandedInEditorOutline" : true,
       "v_separateStatusBar" : false,
@@ -440,7 +440,7 @@
             {
               "CSSTextColor" : "rgba(204,7,52,1.00)",
               "position" : {
-                "top" : -473,
+                "top" : 231,
                 "left" : 15
               },
               "fontName" : "_DEFAULT_",
@@ -448,7 +448,7 @@
               "frame" : {
                 "origin" : {
                   "x" : 15,
-                  "y" : -473
+                  "y" : 231
                 },
                 "size" : {
                   "width" : 545,
@@ -483,7 +483,7 @@
                   "$id" : "Object10053"
                 }
               ],
-              "name" : "mehr erfahren",
+              "name" : "Learn more",
               "size" : {
                 "width" : 545,
                 "height" : 22
@@ -512,7 +512,7 @@
                 },
                 "size" : {
                   "width" : 538,
-                  "height" : -672
+                  "height" : 32
                 }
               },
               "hidden" : false,
@@ -535,7 +535,7 @@
               ],
               "size" : {
                 "width" : 538,
-                "height" : -672
+                "height" : 32
               },
               "alpha" : 1,
               "fontSize" : 25,
@@ -723,12 +723,14 @@
     },
     "editorAppearance" : {
       "fileReferencesNodeIsExpandedInEditorOutline" : true,
-      "inspectorCurrentSegment" : 1,
+      "inspectorCurrentSegment" : 0,
       "collapsedNewItemSections" : [
 
       ],
       "contentScale" : 1,
       "historyStack" : [
+        "Scene1",
+        "Scene44026",
         "Scene1",
         "Scene44026",
         "Scene1",
@@ -754,15 +756,15 @@
         "FormProcessorEvents",
         "FormProcessorAdvanced"
       ],
-      "heightOfNewItemsList" : 377,
+      "heightOfNewItemsList" : 352,
       "inspectorIsVisible" : true,
       "elementListIsVisible" : true,
       "globalObjectsNodeIsExpandedInEditorOutline" : true,
-      "historyStackPosition" : 15
+      "historyStackPosition" : 17
     },
     "hidesStatusBarOnLaunch" : 0,
     "editorVersion" : 363,
-    "title" : "TOKYOGames",
+    "title" : "TOKYO Games",
     "formatVersion" : 363,
     "lastObjectID" : 10041,
     "simulatedSystemVersion" : 7,
@@ -791,7 +793,7 @@
       "contentType" : "image\/png",
       "$id" : "ResourceReference9a2fa0f4f20a44a289e75096f62fdd0a",
       "size" : 457959,
-      "resourceID" : "0991132D-C80A-4142-AA2C-A430F154D9E9-3644-00000EB21CAEBD18.png",
+      "resourceID" : "9F0D8832-EBBA-47E7-97D1-315F0F7FAD32-4049-00000CD107769903.png",
       "$domain" : "appdoo",
       "shouldSync" : true,
       "actionInfo" : {
@@ -803,8 +805,8 @@
         "$domain" : "appdoo"
       },
       "originalFileInfo" : {
-        "absolutePath" : "\/Users\/dirkeinecke\/Desktop\/appdoo-AppIcon.png",
-        "relativePath" : "..\/..\/..\/..\/..\/..\/..\/..\/Desktop\/appdoo-AppIcon.png",
+        "absolutePath" : "\/Users\/dirkeinecke\/Dropbox\/appsolute\/Projects\/appdoo\/Projects\/TOKYO Games\/appdoo-TOKYO-Games\/appdoo-AppIcon.png",
+        "relativePath" : "..\/appdoo-AppIcon.png",
         "modificationTime" : 1549882787.9610798,
         "$type" : "FileInfo",
         "$domain" : "appdoo"
