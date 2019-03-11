@@ -120,7 +120,7 @@
         "viewData" : {
           "isExpandedInEditorOutline" : true,
           "$id" : "UIView6636",
-          "$type" : "SceneRootView",
+          "scrollLeft" : 0,
           "position" : {
             "top" : 0,
             "left" : 0
@@ -338,7 +338,7 @@
           "hidden" : false,
           "userInteractionEnabled" : true,
           "name" : "Ansicht",
-          "scrollLeft" : 0
+          "$type" : "SceneRootView"
         },
         "$type" : "UIViewController",
         "$domain" : "appdoo.iOS"
@@ -495,7 +495,7 @@
               "fontSize" : 20,
               "text" : "Learn more",
               "buttonStyle" : "custom",
-              "URLString" : "http:\/\/www.appdoo.info"
+              "URLString" : "https:\/\/www.mamp.info\/appdoo\/"
             },
             {
               "layoutMode" : "autoFitHeight",
